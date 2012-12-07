@@ -1,11 +1,10 @@
 # This code is for the multicoloured LED
 
 require 'sinatra'
-
-require 'bundler.setup'
+require 'bundler/setup'
 require 'wiringpi'
 
-require File.expand_path('lib/led.rb', __FILE__)
+require File.expand_path('../lib/led.rb', __FILE__)
 
 get '/' do
   @title = "Home"
