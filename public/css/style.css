@@ -1,0 +1,104 @@
+.container {
+	width: 960px;
+	margin: 2% auto;
+}
+#main {
+	margin: 10px 0 0 0;
+}
+h1 { font-size: 18px; }
+header h2 { margin: -3px 0 0 0; }
+footer {
+	float: left;
+	clear: left;
+	margin: 30px 0 0 0;
+	tex
+}
+ul.menu {
+	list-style-type: none;
+	margin: 0 0 0 0;
+}
+ul.menu li {
+	display: inline;
+	font-weight: bold;
+	margin: 0 10px 0 0px;
+}
+ul.menu li a {
+	text-decoration: none;
+}
+a.button {
+	float: left;
+	display: block;
+	background: gray; /* Add texture/noise */
+	padding: 60px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 5px;
+	font-size: 20px;
+}
+a.red { border: 1px red solid; background: url('../img/red-noise.png')}
+a.yellow { border: 1px yellow solid; background: url('../img/yellow-noise.png')}
+a.green { border: 1px green solid; background: url('../img/green-noise.png')}
+a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
+.blink-controls {
+	float: left;
+	clear: left;
+	margin: 30px 0 0 0;
+}
+.blink-controls h2 {
+	font-size: 16px;
+}
+.blink-controls select {
+	padding: 1px;
+}
+.blink-controls input, label, select {
+	float: left;
+	clear: left;
+	margin: 10px 0 0 0;
+}
+.blink-controls input[type="submit"] {
+	padding: 10px;
+	background: gray;
+	color: white;
+	font-weight: bold;
+	border-top: red solid 10px;
+	border-left: green solid 10px;
+	border-right: yellow solid 10px;
+	border-bottom: blue solid 10px;
+	border-radius: 40px;
+}
+
+@media only screen and (max-width: 960px) {
+	.container {
+		width: 100%;
+	}
+	a.button {
+		width: 25%;
+		margin: 0;
+		padding: 60px 0;
+		text-align: center;
+		border: 0px;
+	}
+	header {
+	text-align: center;
+	}
+	.blink-controls {
+		padding: 0 20px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	a.button {
+		width: 50%;
+	}
+	footer {
+		width: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 500px) {
+	a.button {
+		width: 100%;
+		padding: 8% 0;
+		height: 20px;
+	}
+}

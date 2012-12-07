@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf8">
+		<title><%= @title %> | Raspberry Pi LED Control</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/style.css"  rel="stylesheet" />
+		<link href="/rss.xml" rel="alternate">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<hgroup>
+					<h1>Raspberry Pi LED Control</h1>
+					<h2>Multicoloured LED</h2>
+				</hgroup>
+				<ul class="menu">
+					<li><a href="/">Home</a></li>
+					<li><a href="/setup">Setup</a></li>
+				</ul>
+			</header>
+
+			<div id="main">
+				<%= yield %>
+			</div>
+
+			<footer>
+				<p><small>Raspberry Pi app made with Ruby + Sinatra + HTML5</small></p>
+			</footer>
+		</div>
+	</body>
+</html>
