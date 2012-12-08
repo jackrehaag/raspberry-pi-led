@@ -107,7 +107,6 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
     width: 100%;
   }
 	a.button {
-		width: 25%;
 		margin: 0;
 		padding: 60px 0;
 		text-align: center;
