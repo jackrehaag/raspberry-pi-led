@@ -95,7 +95,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		text-align: center;
 	}
 }
-@media all and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
 	a.button {
 		width: 100%;
 		padding: 8% 0;
