@@ -12,8 +12,8 @@ get '/' do
 end
 
 get '/set_colour/:colour' do
-  Led.colour(colour)
-  redirect_to :home
+  Led.colour(params[:colour])
+  redirect '/'
 end
 
 get '/cycle' do

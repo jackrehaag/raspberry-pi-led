@@ -5,31 +5,31 @@ class Led
   GREEN_PIN = 5 # GPIO pin 24
   $io.mode PIN, OUTPUT
 
-  def red
+  def self.red
     $io.write(GREEN_PIN, 0)
     $io.write(RED_PIN, 1)
     puts "Light is red"
   end
 
-  def green
+  def self.green
     $io.write(RED_PIN, 0)
     $io.write(GREEN_PIN, 1)
     puts "Light is green"
   end
 
-  def yellow
+  def self.yellow
     $io.write(RED_PIN, 1)
     $io.write(GREEN_PIN, 1)
     puts "Light is yellow"
   end
 
-  def off
+  def self.off
     $io.write(RED_PIN, 0)
     $io.write(GREEN_PIN, 0)
     puts "Light is off"
   end
 
-  def colour(value)
+  def self.colour(value)
     case value
     when "yellow"
       $io.write(RED_PIN, 1)
@@ -43,7 +43,7 @@ class Led
     end
   end
 
-  def blink(colour = "red", interval = 1)
+  def self.blink(colour = "red", interval = 1)
     puts "light is blinking"
     color_code = colour(colour)
     loop do
@@ -53,7 +53,7 @@ class Led
     end
   end
 
-  def cycle
+  def self.cycle
     loop do
       # Red part
       $io.write(RED_PIN, 1)
