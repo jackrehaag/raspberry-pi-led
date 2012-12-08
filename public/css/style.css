@@ -95,36 +95,10 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		text-align: center;
 	}
 }
-@media screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
 	a.button {
 		width: 100%;
 		padding: 8% 0;
 		height: 20px;
 	}
-}
-@media screen and (max-width: 300px) {
-  .container {
-    width: 100%;
-  }
-	a.button {
-		margin: 0;
-		padding: 60px 0;
-		text-align: center;
-		border: 0px;
-	}
-	header {
-	text-align: center;
-	}
-	.blink-controls {
-		padding: 0 20px;
-	}
-  a.button {
-    width: 100%;
-    padding: 8% 0;
-    height: 20px;
-  }
-  footer {
-    width: 100%;
-    text-align: center;
-  }
 }
