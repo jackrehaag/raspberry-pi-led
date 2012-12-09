@@ -1,6 +1,6 @@
 class Led
   $io = WiringPi::GPIO.new
-  PIN = 6
+  PIN = 6 5
   RED_PIN = 6 # GPIO pin 25
   GREEN_PIN = 5 # GPIO pin 24
   $io.mode PIN, OUTPUT
