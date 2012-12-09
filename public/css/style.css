@@ -39,6 +39,7 @@ a.button {
 a.red { border: 1px red solid; background: url('../img/red-noise.png')}
 a.yellow { border: 1px yellow solid; background: url('../img/yellow-noise.png')}
 a.green { border: 1px green solid; background: url('../img/green-noise.png')}
+a.cycle { border: 1px solid black; }
 a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 .blink-controls {
 	float: left;
@@ -73,7 +74,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		width: 100%;
 	}
 	a.button {
-		width: 25%;
+		width: 20%;
 		margin: 0;
 		padding: 60px 0;
 		text-align: center;
