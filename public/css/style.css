@@ -94,6 +94,12 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		text-align: center;
 		border: 0px;
 	}
+	.light-status {
+	  width: 50%;
+	  padding: 0;
+	  margin: 0 auto;
+	  text-align: center;
+	}
 	header {
 	text-align: center;
 	}
@@ -104,6 +110,9 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 @media only screen and (max-width: 700px) {
 	a.button {
 		width: 50%;
+	}
+	.light-status {
+	  width: 100%;
 	}
 	footer {
 		width: 100%;

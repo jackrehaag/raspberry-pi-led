@@ -45,6 +45,9 @@ class Led
     when "green"
       const_set(:LOOP, 0)
       self.green
+    when "off"
+      const_set(:LOOP, 0)
+      self.off
     end
   end
 
