@@ -1,7 +1,7 @@
 $(function() {
 	$('.button').click(function(){
 		$.ajax({
-			url: "/setcolour/" + $(this).attr('name'),
+			url: "/set_colour/" + $(this).attr('name'),
 			success: function(data) {
 				$('.light-status').html(data)
 			}
