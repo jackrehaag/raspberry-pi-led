@@ -52,8 +52,8 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 	font-weight: bold;
 	
 	width: 50%;
-  padding: 60px 0;
-  margin: 0 25%;
+  padding: 30px 0;
+  margin: 10px 25% 0 25%;
   text-align: center;
 }
 .blink-controls {
@@ -111,6 +111,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 	}
 	.light-status {
 	  width: 100%;
+	  margin: 10px 0 0 0;
 	}
 	footer {
 		width: 100%;
