@@ -28,7 +28,7 @@ class Led
   end
 
   def self.off
-    LOOP = 0
+    const_set(:LOOP, 0)
     $io.write(RED_PIN, 0)
     $io.write(GREEN_PIN, 0)
     puts "Light is off"
@@ -37,13 +37,13 @@ class Led
   def self.colour(value)
     case value
     when "yellow"
-      LOOP = 0
+      const_set(:LOOP, 0)
       self.yellow
     when "red"
-      LOOP = 0
+      const_set(:LOOP, 0)
       self.red
     when "green"
-      LOOP = 0
+      const_set(:LOOP, 0)
       self.green
     end
   end
@@ -59,7 +59,7 @@ class Led
   end
 
   def self.cycle
-    LOOP = 1
+    const_set(:LOOP, 1)
     while LOOP == 1
       self.red
       sleep 0.5
