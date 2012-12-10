@@ -1,4 +1,4 @@
-$function() {
+$(function() {
 	$('.button').click(function(){
 		$.ajax({
 			url: "/setcolour/" + (this).attr(name),
@@ -7,4 +7,4 @@ $function() {
 			}
 		})
 	});
-};
+});
