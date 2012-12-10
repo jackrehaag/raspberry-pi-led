@@ -4,7 +4,7 @@ $(function() {
 		$.ajax({
 			url: "/set_colour/" + colour,
 			success: function(data) {
-				$('.light-status').html("The light is now" + colour)
+				$('.light-status').html("The light is now " + colour)
 			}
 		})
 	});
