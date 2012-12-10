@@ -3,6 +3,8 @@ class Led
 
   RED_PIN = 6 # GPIO pin 25
   GREEN_PIN = 5 # GPIO pin 24
+
+  LOOP = 0
   
   $io.mode RED_PIN, OUTPUT
   $io.mode GREEN_PIN, OUTPUT
@@ -26,6 +28,7 @@ class Led
   end
 
   def self.off
+    LOOP = 0
     $io.write(RED_PIN, 0)
     $io.write(GREEN_PIN, 0)
     puts "Light is off"
@@ -34,14 +37,14 @@ class Led
   def self.colour(value)
     case value
     when "yellow"
-      $io.write(RED_PIN, 1)
-      $io.write(GREEN_PIN, 1)
+      LOOP = 0
+      self.yellow
     when "red"
-      $io.write(RED_PIN, 1)
-      $io.write(GREEN_PIN, 0)
+      LOOP = 0
+      self.red
     when "green"
-      $io.write(RED_PIN, 0)
-      $io.write(GREEN_PIN, 1)
+      LOOP = 0
+      self.green
     end
   end
 
@@ -56,18 +59,13 @@ class Led
   end
 
   def self.cycle
-    loop do
-      # Red part
-      $io.write(RED_PIN, 1)
-      $io.write(GREEN_PIN, 0)
+    LOOP = 1
+    while LOOP == 1
+      self.red
       sleep 0.5
-      # Green part
-      $io.write(RED_PIN, 0)
-      $io.write(GREEN_PIN, 1)
+      self.green
       sleep 0.5
-      # Yellow part
-      $io.write(RED_PIN, 1)
-      $io.write(GREEN_PIN, 1)
+      self.yellow
       sleep 0.5
     end
   end
