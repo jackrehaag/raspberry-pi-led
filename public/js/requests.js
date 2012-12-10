@@ -1,9 +1,10 @@
 $(function() {
 	$('.button').click(function(){
+	  colour = $(this).attr('name')
 		$.ajax({
-			url: "/set_colour/" + $(this).attr('name'),
+			url: "/set_colour/" + colour,
 			success: function(data) {
-				$('.light-status').html(data)
+				$('.light-status').html("The light is now" + colour)
 			}
 		})
 	});
