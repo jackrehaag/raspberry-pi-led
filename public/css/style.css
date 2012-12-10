@@ -97,7 +97,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 	.light-status {
 	  width: 50%;
 	  padding: 60px 0;
-	  margin: 0 auto;
+	  margin: 0 25%;
 	  text-align: center;
 	}
 	header {
