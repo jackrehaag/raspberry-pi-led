@@ -48,9 +48,13 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 	float: left;
 	clear: left;
 	background: url('../img/status-bg.png');
-	padding: 60px 100px;
 	font-size: 18px;
 	font-weight: bold;
+	
+	width: 50%;
+  padding: 60px 0;
+  margin: 0 25%;
+  text-align: center;
 }
 .blink-controls {
 	float: left;
@@ -93,12 +97,6 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		padding: 60px 0;
 		text-align: center;
 		border: 0px;
-	}
-	.light-status {
-	  width: 50%;
-	  padding: 60px 0;
-	  margin: 0 25%;
-	  text-align: center;
 	}
 	header {
 	text-align: center;
