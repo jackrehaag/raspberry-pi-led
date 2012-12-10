@@ -1,3 +1,6 @@
+body {
+	background: url('../img/bg.png')
+}
 .container {
 	width: 960px;
 	margin: 2% auto;
@@ -41,6 +44,14 @@ a.yellow { border: 1px yellow solid; background: url('../img/yellow-noise.png')}
 a.green { border: 1px green solid; background: url('../img/green-noise.png')}
 a.cycle { border: 1px solid black; }
 a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
+.light-status {
+	float: left;
+	clear: left;
+	background: url('../img/status-bg.png');
+	padding: 60px 100px;
+	font-size: 18px;
+	font-weight: bold;
+}
 .blink-controls {
 	float: left;
 	clear: left;
@@ -70,6 +81,9 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 }
 
 @media only screen and (max-width: 960px) {
+	body {
+		width: 100%;
+	}
 	.container {
 		width: 100%;
 	}
@@ -87,7 +101,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		padding: 0 20px;
 	}
 }
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
 	a.button {
 		width: 50%;
 	}
@@ -96,7 +110,7 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 		text-align: center;
 	}
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 	a.button {
 		width: 100%;
 		padding: 8% 0;
