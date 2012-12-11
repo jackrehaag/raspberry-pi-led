@@ -3,6 +3,7 @@
 require 'sinatra'
 require 'bundler/setup'
 require 'wiringpi'
+require 'twilio-ruby'
 
 require File.expand_path('../lib/led.rb', __FILE__)
 
