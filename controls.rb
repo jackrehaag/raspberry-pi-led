@@ -33,17 +33,18 @@ get '/setup' do
 end
 
 get '/text_input' do
-  if @sms.content.include?('red')
+  content = params[:Body]
+  if content.include?('red')
     Led.colour("red")
     twiml = Twilio::TwiML::Response.new do |r|
       twiml.Sms = "The colour has been set to red"
     end
-  elsif @sms.content.include?('yellow')
+  elsif content.include?('yellow')
     Led.colour("yellow")
     twiml = Twilio::TwiML::Response.new do |r|
       twiml.Sms = "The colour has been set to yellow"
     end
-  elsif @sms.content.include?('green')
+  elsif content.include?('green')
     Led.colour("green")
     twiml = Twilio::TwiML::Response.new do |r|
       twiml.Sms = "The colour has been set to green"
