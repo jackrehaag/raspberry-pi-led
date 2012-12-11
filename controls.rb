@@ -13,7 +13,6 @@ end
 
 get '/set_colour/:colour' do
   Led.colour(params[:colour])
-  redirect '/'
 end
 
 get '/cycle' do
@@ -25,11 +24,6 @@ get '/blink' do
   colour = params[:colour]
   interval = params[:interval]
   Led.blink(colour, interval)
-end
-
-get '/off' do
-  Led.off
-  redirect_to :home
 end
 
 get '/setup' do

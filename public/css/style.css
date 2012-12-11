@@ -48,9 +48,13 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 	float: left;
 	clear: left;
 	background: url('../img/status-bg.png');
-	padding: 60px 100px;
 	font-size: 18px;
 	font-weight: bold;
+	
+	width: 50%;
+  padding: 30px 0;
+  margin: 10px 25% 0 25%;
+  text-align: center;
 }
 .blink-controls {
 	float: left;
@@ -104,6 +108,10 @@ a.off { border: 1px gray solid; background: url('../img/gray-noise.png')}
 @media only screen and (max-width: 700px) {
 	a.button {
 		width: 50%;
+	}
+	.light-status {
+	  width: 100%;
+	  margin: 10px 0 0 0;
 	}
 	footer {
 		width: 100%;
